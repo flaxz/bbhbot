@@ -1,0 +1,11 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "beem>=0.24.26",
+    "jinja2>=2.11.3",
+    "hiveengine>=0.2.2",
+    "requests>=2.25.0",
+    "datetime"
+]
+build-backend = "setuptools.build_meta"
