@@ -368,7 +368,7 @@ def main():
             print('[*] Transfering %f %s from %s to %s' % (TOKEN_GIFT_AMOUNT, TOKEN_NAME, ACCOUNT_NAME, parent_author))
 
             wallet = Wallet(ACCOUNT_NAME, api=setApi, blockchain_instance=HIVE)
-            wallet.transfer(TOKEN_GIFT_AMOUNT, TOKEN_NAME, receiver=parent_author, memo=config['HiveEngine']['TRANSFER_MEMO'])
+            wallet.transfer(parent_author, TOKEN_GIFT_AMOUNT, TOKEN_NAME, memo=config['HiveEngine']['TRANSFER_MEMO'])
 
             today = str(date.today())
             db_save_gift(today, author_account, parent_author, op['block_num'])
