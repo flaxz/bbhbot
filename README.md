@@ -43,7 +43,7 @@ nano bbhbot.config
 Copy your configuration and comment templates to your working directory.
 ```
 cd ~/bbhbot
-sudo cp templates /usr/local/bin
+sudo cp -R templates /usr/local/bin
 sudo cp bbhbot /usr/local/bin
 sudo cp bbhbot.config /usr/local/bin
 sudo cp run-bbhbot.sh /usr/local/bin
