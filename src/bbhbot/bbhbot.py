@@ -32,8 +32,7 @@ HIVE = Hive(node=[HIVE_API_NODE], keys=[config['Global']['ACCOUNT_ACTIVE_KEY']])
 HIVE.chain_params['chain_id'] = 'beeab0de00000000000000000000000000000000000000000000000000000000'
 beem.instance.set_shared_blockchain_instance(HIVE)
 
-HE_API_NODE = config['HiveEngine']['HE_API_NODE']
-setApi = Api(url = [HE_API_NODE])
+setApi = Api(url = "https://engine.rishipanthee.com/")
 
 ACCOUNT = Account(ACCOUNT_NAME)
 TOKEN_NAME = config['HiveEngine']['TOKEN_NAME']
