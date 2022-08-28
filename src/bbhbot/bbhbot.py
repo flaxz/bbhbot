@@ -321,7 +321,7 @@ def main():
         if not can_gift(author_account, parent_author):
             print('Invoker doesnt meet minimum requirements')
 
-            min_staked = float(config['AccessLevel1']['MIN_TOKEN_STAKED'])
+            min_balance = float(config['AccessLevel1']['MIN_TOKEN_BALANCE'])
 
             if invoker_level > 0 and daily_limit_reached(author_account,invoker_level):
                 # Check if invoker has reached daily limits
@@ -340,7 +340,7 @@ def main():
 
             else:
                 # Tell the invoker how to gain access to the bot
-                comment_body = comment_fail_template.render(token_name=TOKEN_NAME, target_account=author_account, min_staked=min_staked)
+                comment_body = comment_fail_template.render(token_name=TOKEN_NAME, target_account=author_account, min_balance=min_balance)
                 message_body = '%s tried to send %s but didnt meet requirements.' % (author_account, TOKEN_NAME)
 
                 post_comment(post, ACCOUNT_NAME, comment_body)
