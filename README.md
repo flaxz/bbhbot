@@ -71,6 +71,7 @@ sudo systemctl start bbhbot.service
 Get status and error messages.
 ```
 sudo systemctl status bbhbot.service
+q
 ```
 
 Stop the bot.
