@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="bbhbot",
-    version="0.0.5",
+    version="0.0.6",
     author="Erik Gustafsson (Team Alive) and Hive Pizza Team",
     author_email="erikegse@gmail.com",
     description="A script to find and react to BBH commands in comments",
